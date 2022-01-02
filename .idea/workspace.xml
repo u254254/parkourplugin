@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="" />
+    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +73,11 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="Jenkins.Settings">
+    <option name="jenkinsVersion" value="VERSION_2" />
+    <option name="lastSelectedView" value="all" />
+    <option name="username" value="user254" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -96,7 +104,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Jenkins Linter" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -267,7 +275,9 @@
       <workItem from="1640613180412" duration="10000" />
       <workItem from="1640687082722" duration="7444000" />
       <workItem from="1640758362769" duration="1204000" />
-      <workItem from="1640962192781" duration="37000" />
+      <workItem from="1640962192781" duration="303000" />
+      <workItem from="1641102440238" duration="187000" />
+      <workItem from="1641102650161" duration="543000" />
     </task>
     <servers />
   </component>
