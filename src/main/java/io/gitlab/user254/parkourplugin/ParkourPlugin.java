@@ -13,7 +13,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.*;
 
 public final class ParkourPlugin extends JavaPlugin {
-    private final HashMap<Player, ParkourTimer> timers = new HashMap<Player, ParkourTimer>();
+    private final HashMap<Player, ParkourTimer> timers = new HashMap<>();
+    private final HashMap<Player, Integer> attempts = new HashMap<>();
 
     @Override
     public void onEnable() {
@@ -29,11 +30,10 @@ public final class ParkourPlugin extends JavaPlugin {
     public boolean onCommand(@NotNull CommandSender sender, Command cmd, @NotNull String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("parkour")) {
 
-            if (!(sender instanceof Player)) {
+            if (!(sender instanceof Player player)) {
                 sender.sendMessage("This command can only be run by a player.");
                 return false;
             } else {
-                var player = (Player) sender;
                 var util = Util.getInstance();
 
                 if (args.length > 1) {
@@ -66,11 +66,7 @@ public final class ParkourPlugin extends JavaPlugin {
                         break;
                     case "timerstart":
                         // todo
-                        if (player != null) {
-                            timers.put(player, new ParkourTimer(this, player));
-                        } else {
-                            sender.sendMessage("Invalid player!");
-                        }
+                        timers.put(player, new ParkourTimer(this, player));
                         break;
                     case "timerstop":
                         // todo
