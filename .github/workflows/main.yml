@@ -17,8 +17,8 @@ jobs:
         
       - name: Setup JDK 16
         run: |
-          sudo apt update
-          sudo apt install openjdk-16-jdk
+          sudo apt-get update
+          sudo apt-get install openjdk-16-jdk
 
       - name: Gradle Build
         run: ./gradlew shadowJar

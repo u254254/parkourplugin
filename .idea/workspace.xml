@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="Add attempts in parkour timer">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/ParkourPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/ParkourPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/util/ParkourTimer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/util/ParkourTimer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8fd194a1-c3f5-4900-871b-6acefcec19e5" />
+        <option name="url" value="https://github.com/u254254/parkourplugin.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="Jenkins.Settings">
     <option name="jenkinsVersion" value="VERSION_2" />
@@ -283,6 +289,8 @@
       <workItem from="1641102650161" duration="4752000" />
       <workItem from="1642225581143" duration="2000" />
       <workItem from="1646728554641" duration="1103000" />
+      <workItem from="1646731036875" duration="728000" />
+      <workItem from="1646792862147" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare Jenkins pipeline">
       <created>1641103442458</created>
