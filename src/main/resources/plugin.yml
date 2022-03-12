@@ -1,5 +1,5 @@
 name: ParkourPlugin
-main: io.gitlab.user254.parkourplugin.ParkourPlugin
+main: com.github.user254.parkourplugin.ParkourPlugin
 version: 0.0.1-SNAPSHOT
 api-version: 1.18
 author: user254

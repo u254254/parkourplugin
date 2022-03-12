@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="Change apt to apt-get in github actions">
+    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="Delete unused object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/util/ParkourTimer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/util/ParkourTimer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,7 @@
       <workItem from="1646728554641" duration="1103000" />
       <workItem from="1646731036875" duration="728000" />
       <workItem from="1646792862147" duration="248000" />
-      <workItem from="1647080126183" duration="2627000" />
+      <workItem from="1647080126183" duration="3347000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare Jenkins pipeline">
       <created>1641103442458</created>
@@ -336,7 +335,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646793030637</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change package name's gitlab to github and timer bug fix related to double">
+      <created>1647083421379</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647083421379</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Delete unused object">
+      <created>1647083433438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647083433438</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +376,10 @@
     <MESSAGE value="why it appearing" />
     <MESSAGE value="Add attempts in parkour timer" />
     <MESSAGE value="Change apt to apt-get in github actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change apt to apt-get in github actions" />
+    <MESSAGE value="change package name's gitlab to github" />
+    <MESSAGE value="change package name's gitlab to github and" />
+    <MESSAGE value="change package name's gitlab to github and timer bug fix related to double" />
+    <MESSAGE value="Delete unused object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unused object" />
   </component>
 </project>
