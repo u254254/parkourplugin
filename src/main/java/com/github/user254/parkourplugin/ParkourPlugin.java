@@ -1,7 +1,6 @@
 package com.github.user254.parkourplugin;
 
 import com.github.user254.parkourplugin.util.ParkourTimer;
-import com.github.user254.parkourplugin.util.Util;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -33,7 +32,6 @@ public final class ParkourPlugin extends JavaPlugin {
                 sender.sendMessage("This command can only be run by a player.");
                 return false;
             } else {
-                var util = Util.getInstance();
 
                 if (args.length > 1) {
                     sender.sendMessage("Too many arguments!");
@@ -75,6 +73,15 @@ public final class ParkourPlugin extends JavaPlugin {
                         } else {
                             sender.sendMessage("Invalid player!");
                         }
+                        break;
+                    case "prac":
+                        // todo
+                        break;
+                    case "return":
+                        // todo
+                        break;
+                    case "unprac":
+                        // todo
                         break;
                     default:
                         sender.sendMessage("Invalid command!");

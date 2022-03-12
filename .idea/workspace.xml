@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="Delete unused object">
+    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="small changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/practicemode/PracticeMode.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/practicemode/PracticeModeController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/util/PlayerUtil.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/ParkourPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/ParkourPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/util/ParkourTimer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/util/ParkourTimer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/user254/parkourplugin/util/Util.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -298,7 +304,7 @@
       <workItem from="1646728554641" duration="1103000" />
       <workItem from="1646731036875" duration="728000" />
       <workItem from="1646792862147" duration="248000" />
-      <workItem from="1647080126183" duration="3347000" />
+      <workItem from="1647080126183" duration="7508000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare Jenkins pipeline">
       <created>1641103442458</created>
@@ -349,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647083433438</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="small changes">
+      <created>1647083558073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647083558073</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,6 +393,7 @@
     <MESSAGE value="change package name's gitlab to github and" />
     <MESSAGE value="change package name's gitlab to github and timer bug fix related to double" />
     <MESSAGE value="Delete unused object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unused object" />
+    <MESSAGE value="small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
   </component>
 </project>

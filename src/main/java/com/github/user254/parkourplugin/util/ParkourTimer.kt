@@ -13,7 +13,7 @@ import org.bukkit.scheduler.BukkitRunnable
 class ParkourTimer(private val plugin: JavaPlugin, private val player: Player) {
     var ticks: Int = 0
     var sec: Int = 0
-    var attempts: Int = 0
+    var attempts: Int = 0 // todo
 
     private fun doTaskTick(player: Player, ticks: Int, sec: Int) {
         player.sendActionBar(Component.text("<Elapsed Time: $sec.${(ticks * 5)}, Attempts: $attempts>"))
