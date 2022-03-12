@@ -1,14 +1,13 @@
-package io.gitlab.user254.parkourplugin;
+package com.github.user254.parkourplugin;
 
-import io.gitlab.user254.parkourplugin.util.ParkourTimer;
-import io.gitlab.user254.parkourplugin.util.Util;
+import com.github.user254.parkourplugin.util.ParkourTimer;
+import com.github.user254.parkourplugin.util.Util;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
 
@@ -60,7 +59,7 @@ public final class ParkourPlugin extends JavaPlugin {
                         // TODO
                         break;
                     case "tpstart":
-                        var loc = new Location(player.getWorld(), 0, 89, 0, 0, 0);
+                        var loc = new Location(player.getWorld(), 0.5, 89, 0.5, 0, 0);
                         player.teleport(loc);
                         player.sendMessage("Teleported to start");
                         break;
@@ -72,6 +71,7 @@ public final class ParkourPlugin extends JavaPlugin {
                         // todo
                         if (timers.get(player) != null) {
                             timers.get(player).cancelTimer();
+                            timers.remove(player);
                         } else {
                             sender.sendMessage("Invalid player!");
                         }

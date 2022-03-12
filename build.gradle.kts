@@ -42,6 +42,21 @@ publishing {
     }
 }
 
+// Custom Task
+
+tasks.register("server") {
+    dependsOn("shadowJar")
+    doLast {
+        exec { commandLine("cp", "build/libs/ParkourPlugin-0.0.1-SNAPSHOT-all.jar", "../../server/plugins/") }
+        exec {
+            workingDir("../../server/")
+            commandLine("/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/bin/java", "-Xms512M", "-Xmx2048M", "-jar", "paper-1.18.1.jar", "-nogui")
+        }
+    }
+}
+
+// End Custom Task
+
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
     jvmTarget = "16"

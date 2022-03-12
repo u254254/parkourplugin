@@ -1,9 +1,8 @@
-package io.gitlab.user254.parkourplugin.util;
+package com.github.user254.parkourplugin.util;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**

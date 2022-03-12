@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="Add attempts in parkour timer">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+    <list default="true" id="37c5c309-fef5-4afb-9e61-3cb07aabcfe8" name="Changes" comment="Change apt to apt-get in github actions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/util/ParkourTimer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/gitlab/user254/parkourplugin/util/ParkourTimer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,12 @@
                 <item name="ParkourPlugin" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ParkourPlugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -125,7 +132,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ParkourPlugin [shadowJar]">
+  <component name="RunManager" selected="Shell Script.ParkourPlugin [server]">
     <configuration name="ParkourPlugin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -152,7 +159,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -189,33 +196,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ParkourPlugin [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishToMavenLocal" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="ParkourPlugin [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -256,13 +242,35 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="ParkourPlugin [server]" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="./gradlew shadowJar &amp;&amp; cp build/libs/ParkourPlugin-0.0.1-SNAPSHOT-all.jar ../../server/plugins/ &amp;&amp; cd ../../server/ &amp;&amp; /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/bin/java -Xms512M -Xmx2048M -jar paper-1.18.1.jar -nogui &amp;&amp; exit" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.ParkourPlugin [build]" />
+      <item itemvalue="Gradle.ParkourPlugin [clean]" />
+      <item itemvalue="Gradle.ParkourPlugin [jar]" />
+      <item itemvalue="Gradle.ParkourPlugin [shadowJar]" />
+      <item itemvalue="Maven.ParkourPlugin [install]" />
+      <item itemvalue="Shell Script.ParkourPlugin [server]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ParkourPlugin [shadowJar]" />
         <item itemvalue="Gradle.ParkourPlugin [clean]" />
         <item itemvalue="Gradle.ParkourPlugin [build]" />
         <item itemvalue="Gradle.ParkourPlugin [jar]" />
-        <item itemvalue="Gradle.ParkourPlugin [publishToMavenLocal]" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +298,8 @@
       <workItem from="1642225581143" duration="2000" />
       <workItem from="1646728554641" duration="1103000" />
       <workItem from="1646731036875" duration="728000" />
-      <workItem from="1646792862147" duration="119000" />
+      <workItem from="1646792862147" duration="248000" />
+      <workItem from="1647080126183" duration="2627000" />
     </task>
     <task id="LOCAL-00001" summary="Prepare Jenkins pipeline">
       <created>1641103442458</created>
@@ -320,11 +329,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641113828016</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Change apt to apt-get in github actions">
+      <created>1646793030637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646793030637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="main.yml" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -343,6 +362,7 @@
     <MESSAGE value="Add .gitignore" />
     <MESSAGE value="why it appearing" />
     <MESSAGE value="Add attempts in parkour timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add attempts in parkour timer" />
+    <MESSAGE value="Change apt to apt-get in github actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change apt to apt-get in github actions" />
   </component>
 </project>

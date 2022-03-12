@@ -1,4 +1,4 @@
-package io.gitlab.user254.parkourplugin.util
+package com.github.user254.parkourplugin.util
 
 import net.kyori.adventure.text.Component
 import org.bukkit.entity.Player
@@ -16,7 +16,7 @@ class ParkourTimer(private val plugin: JavaPlugin, private val player: Player) {
     var attempts: Int = 0
 
     private fun doTaskTick(player: Player, ticks: Int, sec: Int) {
-        player.sendActionBar(Component.text("<Elapsed Time: $sec.${ticks * 0.05}, Attempts: $attempts>"))
+        player.sendActionBar(Component.text("<Elapsed Time: $sec.${(ticks * 5)}, Attempts: $attempts>"))
     }
     private val taskTick = object: BukkitRunnable() {
         override fun run() {
