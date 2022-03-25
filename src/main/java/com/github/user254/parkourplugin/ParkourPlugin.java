@@ -1,14 +1,19 @@
 package com.github.user254.parkourplugin;
 
+import com.github.user254.parkourplugin.practicemode.PracticeModeController;
 import com.github.user254.parkourplugin.util.ParkourTimer;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.HashMap;
 
 public final class ParkourPlugin extends JavaPlugin {
     private final HashMap<Player, ParkourTimer> timers = new HashMap<>();
@@ -75,13 +80,13 @@ public final class ParkourPlugin extends JavaPlugin {
                         }
                         break;
                     case "prac":
-                        // todo
+                        PracticeModeController.INSTANCE.startPractice(player);
                         break;
                     case "return":
-                        // todo
+                        PracticeModeController.INSTANCE.returnToOldLocation(player);
                         break;
                     case "unprac":
-                        // todo
+                        PracticeModeController.INSTANCE.stopPractice(player);
                         break;
                     default:
                         sender.sendMessage("Invalid command!");
